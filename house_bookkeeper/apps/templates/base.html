@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="{{encoding}}">
+        <link href="{% static '/css/base.css' %}" rel="stylesheet">
+        <link href="{% static '/css/blog.css' %}" rel="stylesheet">
+        <base href="{{domain}}">
+        <title>{{title}}</title>
+    </head>
+    <body>
+        <div class="Panel">
+            {% block panel %}{% endblock panel %}
+        </div>
+        <div class="Content">
+            {% block content %}{% endblock content %}
+        </div>
+    </body>
+</html>

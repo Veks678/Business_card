@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0; 
+}
+
+.Panel {
+    display: inline-block;
+    position: fixed;
+    width: 200px;
+    height: 100vh;
+    padding: 0%;
+    
+    background-color: rgb(61, 61, 61);
+}
+
+.Panel a {
+    flex-direction: column;
+    text-decoration: none;
+    
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    padding-top: 20px;
+    top: 20px;
+    left: 40px;
+    
+    color: rgb(255, 255, 255);
+    font-size: 25px/25px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.Content {
+    display: inline-block;
+    position: sticky;
+    width: 100vh;
+    top: 40px;
+    left: 240px;
+}

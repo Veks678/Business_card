@@ -1,0 +1,13 @@
+input, input + label + div {
+    display: none; 
+}
+
+input + label, input:checked + label {
+    display: flex;
+    margin: 0;
+    padding-top: 10px;
+}
+input:checked + label + div {
+    display: block; 
+    padding: 10px; 
+}

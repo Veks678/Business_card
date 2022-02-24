@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}{% endblock content %}
+
+{% block panel %}
+        {% for param in panel_param %}
+            <a href="{{param.url}}">{{param.name}}</a>
+        {% endfor %}
+{% endblock panel %}

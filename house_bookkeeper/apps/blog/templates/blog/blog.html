@@ -1,0 +1,10 @@
+{% extends "panel.html" %}
+{% load static %}
+
+{% block content %}
+        {% for p in posts %}
+        <input id="{{p.id}}" type="checkbox" >
+        <label for="{{p.id}}">{{p.publication}}</label>
+        <div>{{p.filling}}</div>
+        {% endfor %}
+{% endblock content %}
