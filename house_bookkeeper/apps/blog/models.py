@@ -1,7 +1,8 @@
 from django.db import models
+from django.urls import reverse
 
-class Writing(models.Model):
-    publication = models.DateTimeField(auto_now_add=True)
-    filling = models.TextField(null=True, blank=True)
+class Publications(models.Model):
+    date = models.DateTimeField(auto_now_add=True)
+    text = models.TextField(null=True, blank=True)
 
 

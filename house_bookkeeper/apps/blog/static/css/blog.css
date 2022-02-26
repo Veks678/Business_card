@@ -1,13 +1,11 @@
-input, input + label + div {
+input {
     display: none; 
 }
 
-input + label, input:checked + label {
-    display: flex;
-    margin: 0;
-    padding-top: 10px;
+.date + .text {
+    display: block;
 }
-input:checked + label + div {
-    display: block; 
-    padding: 10px; 
+
+.date {
+    padding: 0px;
 }

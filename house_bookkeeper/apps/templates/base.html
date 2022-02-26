@@ -2,11 +2,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="{{encoding}}">
+        <meta charset="{{head_param.encoding}}">
         <link href="{% static '/css/base.css' %}" rel="stylesheet">
         <link href="{% static '/css/blog.css' %}" rel="stylesheet">
-        <base href="{{domain}}">
-        <title>{{title}}</title>
+        <title>{{head_param.title}}</title>
     </head>
     <body>
         <div class="Panel">
