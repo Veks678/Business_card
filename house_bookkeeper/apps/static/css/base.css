@@ -6,13 +6,9 @@ body {
 .Panel {
     display: block;
     position: fixed;
-    width: 20vh;
+    width: 30vh;
     height: 100vh;
     padding: 0px;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
     
     background-color: rgb(61, 61, 61);
 }
@@ -23,9 +19,9 @@ body {
     
     display: block;
 
-    width: 100px;
+    width: 15vh;
     padding-top: 25px;
-    padding-left: 40px;
+    padding-left: 22%;
 
     color: rgb(255, 255, 255);
     font-size: 25px/25px;
@@ -36,7 +32,10 @@ body {
 .Content {
     display: block;
     position: sticky;
+
     width: 100vh;
-    padding-top: 40px;
-    left: 30vh;
+    padding-top: 10px;
+    left: 30%;
+    
+    text-align: center;
 }

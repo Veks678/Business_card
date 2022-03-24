@@ -2,10 +2,12 @@ input {
     display: none; 
 }
 
-.date + .text {
+.Date + .Text {
     display: block;
-}
-
-.date {
     padding: 0px;
 }
+
+.Publication {
+    padding-bottom: 30px;
+}
+

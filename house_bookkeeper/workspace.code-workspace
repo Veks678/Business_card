@@ -2,10 +2,6 @@
 	"folders": [
         {
             "path": ".."
-        },
-        {
-            "name": "Business_card",
-            "path": "..\\.git\\Business_card"
         }
     ],
     "settings": {}

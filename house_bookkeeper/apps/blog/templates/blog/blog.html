@@ -2,10 +2,16 @@
 
 {% block content %}
         {% for p in posts %}
-        <input id="{{p.id}}" type="checkbox" >
-        <label class='date' for="{{p.id}}">
-            <b>{{p.date}}</b>
-        </label>
-        <p class='text'>{{p.text}}</p>
+            <section class="Publication">
+                <article class="Date">
+                    <input id="{{p.id}}" type="checkbox" >
+                    <label for="{{p.id}}">
+                        <h3>{{p.date}}</h3>
+                    </label>
+                </article>
+                <article class="Text">
+                    <p>{{p.text}}</p>
+                </article>
+            </section>
         {% endfor %}
 {% endblock content %}
