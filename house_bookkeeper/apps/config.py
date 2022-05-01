@@ -2,7 +2,6 @@ head_param = {
     'title': 'Анатолий Михеенко',
     'encoding': 'UTF-8',
     'content': 'Сайт-визитка, Анатолий михеенко, резюме, блог, проекты, новости'
-
 }
 panel_param = [
     {'title': 'Новости', 'route_name': 'news'},
@@ -11,6 +10,9 @@ panel_param = [
     {'title': 'Блог', 'route_name': 'blog'}
 ]
 
-base_param = {'head_param': head_param, 'panel_param': panel_param}
+base_param = {
+    'head_param': head_param,
+    'panel_param': panel_param
+}
 
 

@@ -5,6 +5,7 @@ from django.shortcuts import render
 
 from apps.config import base_param
 from .models import Publications
+from ..news.views import news_publication
 
 var_param = 213
 
@@ -20,9 +21,14 @@ def updating_publications():
     new_publ = new_publ.replace('\n', ' ').rstrip().strip()
     old_publ = [publ.text for publ in Publications.objects.all()]
     
-    if new_publ not in old_publ: Publications(text=new_publ).save()     
+    if new_publ not in old_publ:
+        entry = Publications(text=new_publ)
+        entry.save() 
+        return 'Запись в блоге', 'blog', entry.id
 
 def blog(request):
-    updating_publications()
+    entry_info = updating_publications()
+    if entry_info != None: news_publication(entry_info)
+
     base_param['posts'] = Publications.objects.all()
     return render(request, 'blog/blog.html', base_param)

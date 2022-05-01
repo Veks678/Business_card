@@ -1,5 +1,17 @@
 {% extends "panel.html" %}
 
 {% block content %}
-        <h1>Новости</h1>
+        {% for n in news %}
+            <section class="News">
+                <article class="Date">
+                    <input id="{{n.id}}" type="checkbox" >
+                    <label for="{{n.id}}">
+                        <h3>{{n.date}}</h3>
+                    </label>
+                </article>
+                <article class="Section">
+                    <p>{{n.section}}</p>
+                </article>
+            </section>
+        {% endfor %}
 {% endblock content %}

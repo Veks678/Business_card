@@ -2,12 +2,11 @@ input {
     display: none; 
 }
 
-.Date + .Text {
+.Date + .Section {
     display: block;
     padding: 0px;
 }
 
-.Blog {
+.News {
     padding-bottom: 30px;
 }
-
