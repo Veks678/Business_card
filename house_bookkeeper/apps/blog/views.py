@@ -24,7 +24,7 @@ def updating_publications():
     if new_publ not in old_publ:
         entry = Publications(text=new_publ)
         entry.save() 
-        return 'Запись в блоге', 'blog', entry.id
+        return 'Запись в блоге', entry.id
 
 def blog(request):
     entry_info = updating_publications()

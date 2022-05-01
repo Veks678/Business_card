@@ -6,7 +6,7 @@ from apps.config import base_param
 
 # Публикация новостей
 def news_publication(entry_info): 
-    name, url, entry_id = entry_info
+    name, entry_id = entry_info
     Publications(section=name).save()
 
 def news(request):
