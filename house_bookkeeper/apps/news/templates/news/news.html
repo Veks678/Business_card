@@ -2,15 +2,13 @@
 
 {% block content %}
         {% for n in news %}
-            <section class="News">
-                <article class="Date">
+            <section class="Publication">
+                <article>
                     <input id="{{n.id}}" type="checkbox" >
                     <label for="{{n.id}}">
-                        <h3>{{n.date}}</h3>
+                        <a href="{% url n.url %}#a{{n.focus_id}}">{{n.section}}</a>
+                        <b>{{n.date}}</b>
                     </label>
-                </article>
-                <article class="Section">
-                    <p>{{n.section}}</p>
                 </article>
             </section>
         {% endfor %}

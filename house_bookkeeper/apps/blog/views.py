@@ -7,8 +7,6 @@ from apps.config import base_param
 from .models import Publications
 from ..news.views import news_publication
 
-var_param = 213
-
 # Обновление публикаций
 def updating_publications():
     if not exists('..\\publications.txt'): return
@@ -24,7 +22,7 @@ def updating_publications():
     if new_publ not in old_publ:
         entry = Publications(text=new_publ)
         entry.save() 
-        return 'Запись в блоге', entry.id
+        return 'Запись в блоге', 'blog', entry.id
 
 def blog(request):
     entry_info = updating_publications()

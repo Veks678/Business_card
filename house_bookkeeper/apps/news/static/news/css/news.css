@@ -2,9 +2,9 @@ input {
     display: none; 
 }
 
-.Date + .Section {
-    display: block;
+.Publication {
     padding: 0px;
+    display: inline;
 }
 
 .News {
