@@ -3,12 +3,6 @@ body {
     margin: 0; 
 }
 
-#airdatepicker {
-    display: block;
-    width: 130px;
-    height: 130px;
-}
-
 .Panel {
     display: block;
     position: fixed;

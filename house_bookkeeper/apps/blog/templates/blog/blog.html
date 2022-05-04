@@ -1,14 +1,15 @@
 {% extends "panel.html" %}
+{% load static %}
 
 {% block content %}
+        <input type="hidden" id="ranged">
+        <script src="{% static 'js/calendar.js' %}"></script>
+
         {% for p in posts %}
             <section class="Blog">
                 <article class="Date">
-                    <input id="{{p.id}}" type="checkbox" >
-                    <label for="{{p.id}}">
-                        <a name="a{{p.id}}"></a>
-                        <h3>{{p.date}}</h3>
-                    </label>
+                    <a name="a{{p.id}}"></a>
+                    <h3>{{p.date}}</h3>
                 </article>
                 <article class="Text">
                     <p>{{p.text}}</p>
