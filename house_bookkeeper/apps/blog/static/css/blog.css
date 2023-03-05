@@ -1,7 +1,3 @@
-input {
-    display: none; 
-}
-
 .Date + .Text {
     display: block;
     padding: 0px;
@@ -10,6 +6,3 @@ input {
 .Blog {
     padding-bottom: 30px;
 }
-
-
-

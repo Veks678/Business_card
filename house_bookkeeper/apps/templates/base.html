@@ -6,10 +6,13 @@
         <meta charset="{{head_param.encoding}}">
         <meta name="keywords" content="{{head_param.content}}">
         <meta name="viewport" content="width=device-width">
-        
-        <link href="{% static '/css/base.css' %}" rel="stylesheet">
-        <link href="{% static '/css/blog.css' %}" rel="stylesheet">
-        
+
+        <script src="https://rawgit.com/wwilsman/Datepicker.js/master/dist/datepicker.js"></script>
+
+        <link href="{% static 'css/base.css' %}" rel="stylesheet">
+        <link href="{% static 'css/blog.css' %}" rel="stylesheet">
+        <link href="{% static 'css/datepicker.css' %}" rel="stylesheet">
+
         <title>{{head_param.title}}</title>
     </head>
     <body>
